@@ -49,7 +49,15 @@
               <li><a>All Fruits</a></li>
             </ul>
           </div>
-         
+           
+        <div class="flex justify-center">
+            <a class="normal-case text-4xl">
+              <img src="/images/logo.png" alt="" srcset="">
+            </a>
+            <!-- <a class="md:btn btn-ghost normal-case text-xl  text-black lg:text-white text-4xl mt-2 font-bold">Fruit Burst</a> -->
+            <a class="md:btn btn-ghost normal-case text-black  lg:text-white text-4xl mt-2 font-bold">Fruit Burst</a>
+
+          </div>
       
         <!-- Center div -->
         
@@ -150,10 +158,12 @@
         </div>
       </div>
     </div>
+    <!-- Carousel Ends -->
+
+    <!-- orientation of the pseudo layer it will vanish  in mobile screen -->
+
     <div class="hidden  md:block -mt-40 mx-auto flex items-center gap-4 drop-shadow-lg bg-white p-5 h-64 w-2/3">
-    
-        
-        <div class="max-w-screen-xl mx-auto my-14">
+           <div class="max-w-screen-xl mx-auto my-14">
         
             <div class="grid grid-cols-4 gap-4">
                     <!-- Fruit 1 -->
@@ -180,28 +190,70 @@
     </div>
        </div>
 </div>
+<!-- pseudo layer ends here  -->
+
 <main>
+<!-- Deal of the day  -->
 
-    <!-- <section>
-        <div >
-        <h2>
-            Deal of the day
-        </h2>
-          <p>
-            Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
-          </p>
-
+     <section class="max-w-screen-xl mx-auto px-8 md-px-16 mt-1  lg:px-24 py-5 mt-10">
+        <div class=" flex flex-col gap-4 md:flex-row  mb-4 items-center justify-between " >
+            <!-- First Div -->
+        <div class="text-center" >
+            <h2 class="text-xl font-extrabold lg:text-5xl font-extrabold pb-6">
+                Deal of the day
+            </h2>
+              <p class="lg:text-lg ">
+                Contrary to popular belief, is not simply random text. It has roots in a <br>
+                piece of classical Latin literature from 45 BC, making it over 2000 years old.
+              </p>
+    
         </div>
+         <!-- Second Div --> 
 
+         <!-- Static Timer Copied from daisy wind -->
+        <div class="">
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl font-extrabold">
+                    
+                    <span style="--value:12;"></span>
+                  </span>
+                  days
+                </div> 
+                <span class="text-4xl">:</span>
+                <div class="flex flex-col">
+                    
+                  <span class="countdown font-mono text-5xl font-extrabold">
+                    
+                    <span style="--value:9;"></span>
+                  </span>
+                  hours
+                </div> 
+                <span class="text-4xl">:</span>
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl font-extrabold">
+                    <span style="--value:59;"></span>
+                  </span>
+                  min
+                </div> 
+                <span class="text-4xl">:</span>
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl font-extrabold">
+                    <span style="--value:48;"></span>
+                  </span>
+                  sec
+                </div>
+              </div>
+        </div>
+        </div> 
+        </section> 
 
+        <section>
 
-
-
-
-
-    </section> -->
-        
-<section>
+        </section>
+    
+<!-- <section>
     <section
             class="relative h-[1600px] md:h-[1000px]  lg:h-[690px] w-4/5 mx-auto bg-gradient-to-r from-slate-700 to-slate-700 rounded-lg">
             <img class="w-full h-full object-cover absolute mix-blend-overlay	" src="images/team.png" alt="">
@@ -216,7 +268,7 @@
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center pb-28 md:px-20 lg:px-60	">
-                    <!-- card-1 -->
+                 
                     <div class="card  ">
                         <figure><img src="/images/member1.png" alt="Shoes" /></figure>
                         <div class="card-body">
@@ -231,7 +283,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- card-2 -->
+                    
                     <div class="card  ">
                         <figure><img src="/images/member2.png" alt="Shoes" /></figure>
                         <div class="card-body">
@@ -246,7 +298,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- card-3 -->
+                
                     <div class="card  ">
                         <figure><img src="/images/member3.png" alt="Shoes" /></figure>
                         <div class="card-body">
@@ -261,7 +313,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- card-4 -->
+                    
                     <div class="card lg:pl-5 ">
                         <figure><img src="/images/member4.png" alt="Shoes" /></figure>
                         <div class="card-body">
@@ -280,6 +332,100 @@
             </div>
         </section>
 
+</section> -->
+<!-- <section class="max-w-screen-xl mx-auto px-8 md-px-16 lg:px-24 py-5 mb-10">
+    
+    <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-2">
+        <div class="card h-[435px] bg-base-100 border-2 border-dotted border-borderColor">
+            <figure class="px-10 pt-10">
+                <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center space-y-2">
+                <h2 class="card-title text-2xl font-bold text-headerText">12.90$ - 18.85$</h2>
+                <div class="border-t-2 border-borderCol h-1 w-24"></div>
+                <p class="text-base font-medium text-gray2">Apples</p>
+                <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                </div>
+                <div class="card-actions">
+                    <a class="text-lg font-bold text-redAccent" href="#apple">Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="card h-[435px] bg-base-100 border-2 border-dotted border-borderColor">
+            <figure class="px-10 pt-10">
+                <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center space-y-2">
+                <h2 class="card-title text-2xl font-bold text-headerText">12.90$ - 18.85$</h2>
+                <div class="border-t-2 border-borderCol h-1 w-24"></div>
+                <p class="text-base font-medium text-gray2">Oranges</p>
+                <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                </div>
+                <div class="card-actions">
+                    <a class="text-lg font-bold text-redAccent" href="#orange">Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="card h-[435px] bg-base-100 border-2 border-dotted border-borderColor">
+            <figure class="px-10 pt-10">
+                <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center space-y-2">
+                <h2 class="card-title text-2xl font-bold text-headerText">12.90$ - 18.85$</h2>
+                <div class="border-t-2 border-borderCol h-1 w-24"></div>
+                <p class="text-base font-medium text-gray2">Red Dragon</p>
+                <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                </div>
+                <div class="card-actions">
+                    <a class="text-lg font-bold text-redAccent" href="#dragon">Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="card h-[435px] bg-base-100 border-2 border-dotted border-borderColor">
+            <figure class="px-10 pt-10">
+                <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center space-y-2">
+                <h2 class="card-title text-2xl font-bold text-headerText">12.90$ - 18.85$</h2>
+                <div class="border-t-2 border-borderCol h-1 w-24"></div>
+                <p class="text-base font-medium text-gray2">Banana</p>
+                <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-redAccent" />
+                </div>
+                <div class="card-actions">
+                    <a class="text-lg font-bold text-redAccent" href="#banana">Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center mt-5">
+        <button
+            class="btn bg-redAccent text-white normal-case hover:bg-white hover:border-redAccent hover:text-redAccent">Shop
+            All</button>
+    </div>
+</section> -->
+
+<section>
+    
 </section>
     </main>
     <footer>
