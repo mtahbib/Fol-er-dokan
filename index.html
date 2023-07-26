@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                headerc : '#F85559',
+              }
+            }
+          }
+        }
+      </script>
+     <!-- Favicon -->
+     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+     <!-- FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
+
+
+     <style>
+        .body,.font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+     </style>
+
+    <title>Fruit Burst</title>
+</head>
+<body>
+    <header class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5  mt-12 rounded-full lg:bg-headerc ">
+    <div class="navbar-right flex justify-between items-center">
+        <!-- Left corner div -->
+        <div class="navbar-right hidden  lg:flex items-center">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label> 
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+         
+      
+        <!-- Center div -->
+        
+         <div class=" flex justify-center">
+          <a class="normal-case text-4xl"><img src="/images/logo.png" alt="" srcset=""></a>
+          <a class="btn btn-ghost normal-case text-4xl mt-2">Fruit Burst</a>
+        </div>
+      
+        <!-- Right div -->
+        <div class=" hidden lg:flex items-center">
+            
+          <input type="text" placeholder="Search Here" class="input input-bordered input-secondary rounded-full w-full max-w-xs" />
+        </div>
+        <label tabindex="0" class="btn btn-ghost lg:hidden">
+           <div>
+            
+            <div class="dropdown mr-5 pr-5">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] pr-40 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            
+           </div>
+      </div>
+      
+    </header>
+    <!-- carousal -->
+    <main>
+        <section>
+    <div class="lg:max-w-screen-xl mx-auto my-14">
+        <div class="carousel w-fit">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./images/banner1.png" class="w-full" />
+       
+          <div class="flex flex-col gap-1 w-full  md:gap-6 justify-center items-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+          <h1 class="">Exotic tastes at your doorstep</h1>
+          <p class="">We supply highly quality organic products</p>
+          <button class="btn btn-error">Error</button>
+        </div> 
+         
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./images/banner2.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="./images/banner3.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="./images/banner4.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- carousal ends -->
+    <!-- overlay -->
+    <div class="hidden  md:block -mt-40 mx-auto flex items-center gap-4 drop-shadow-lg bg-white p-5 h-64 w-2/3">
+    
+        
+        <div class="max-w-screen-xl mx-auto my-14">
+        
+            <div class="grid grid-cols-4 gap-4">
+                    <!-- Fruit 1 -->
+                <div class="text-center">
+                    <img src="./images/fruit1.png" alt="Fruit 1" class="w-24 h-24 mx-auto mb-2">
+                    <p class="font-bold">Fruit 1</p>
+                </div>
+                     <!-- Fruit 2 -->
+                <div class="text-center">
+                    <img src="./images/fruit2.png" alt="Fruit 1" class="w-24 h-24 mx-auto mb-2">
+                    <p class="font-bold">Fruit 1</p>
+                </div>
+                     <!-- Fruit 3 -->
+                <div class="text-center">
+                    <img src="./images/fruit3.png" alt="Fruit 1" class="w-24 h-24 mx-auto mb-2">
+                    <p class="font-bold">Fruit 1</p>
+                </div>
+                     <!-- Fruit 4 -->
+                <div class="text-center">
+                    <img src="./images/fruit4.png" alt="Fruit 1" class="w-24 h-24 mx-auto mb-2">
+                    <p class="font-bold">Fruit 1</p>
+                </div>
+                
+    </div>
+       </div>
+</div>
+
+ <!-- overlay  ends -->
+
+</section>
+
+
+</main>
+</body>
+</html>
